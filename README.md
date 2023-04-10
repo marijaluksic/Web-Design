@@ -1,5 +1,5 @@
 # Meet Mia
-Web page for a brunch and cake bar in Zagreb
+Web page for a brunch and cake bar in Zagreb.
 
 Pages created:
   - Home page (index.html)
