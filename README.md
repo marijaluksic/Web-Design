@@ -1,4 +1,4 @@
-# Web-Design
+# Meet Mia
 Web page for a brunch and cake bar in Zagreb
 
 Pages created:
