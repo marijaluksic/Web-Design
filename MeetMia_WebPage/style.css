@@ -1,0 +1,1111 @@
+@font-face {
+  font-family: "Bellota";
+  src: url("bellota-fontfacekit/web fonts/bellota_bold/Bellota-Bold-webfont.woff")
+    format("woff");
+  font-style: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bellota";
+  src: url("bellota-fontfacekit/web fonts/bellota_bolditalic/Bellota-BoldItalic-webfont.woff")
+    format("woff");
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bellota";
+  src: url("bellota-fontfacekit/web fonts/bellota_italic/Bellota-Italic-webfont.woff")
+    format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Bellota";
+  src: url("bellota-fontfacekit/web fonts/bellota_light/Bellota-Light-webfont.woff")
+    format("woff");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Bellota";
+  src: url("bellota-fontfacekit/web fonts/bellota_lightitalic/Bellota-LightItalic-webfont.woff")
+    format("woff");
+  font-style: italic;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Bellota";
+  src: url("bellota-fontfacekit/web fonts/bellota_regular/Bellota-Regular-webfont.woff")
+    format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px auto;
+  width: 100%;
+  font-family: "Bellota", serif;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0%;
+  margin-left: 2%;
+}
+a {
+  text-decoration: none;
+  color: rgb(107, 157, 180);
+  font-weight: 700;
+
+  font-style: italic;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 194px;
+  max-width: 100%;
+  height: 1000px;
+  z-index: 3;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.25s ease-in-out;
+}
+.nav-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.nav-list-wrapper {
+  background-color: rgb(255, 250, 254);
+  width: 194px;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+}
+.nav-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav.nav.open {
+  transform: translate3d(0, 0, 0);
+}
+
+button {
+  color: rgb(107, 157, 180);
+  border: none;
+  background-color: transparent;
+}
+.nav-list-dropdown {
+  display: block;
+  background-color: transparent;
+}
+#cakes-dropdown:hover #cakes-list-dropdown {
+  display: block;
+  flex: 0 0 100%;
+  background-color: rgb(107, 157, 180);
+}
+#brunch-dropdown:hover #brunch-list-dropdown {
+  display: block;
+  flex: 0 0 100%;
+  background-color: rgb(107, 157, 180);
+}
+#about-dropdown:hover #about-list-dropdown {
+  display: block;
+  flex: 0 0 100%;
+  background-color: rgb(107, 157, 180);
+}
+.nav-list-item:hover {
+  background-color: rgb(107, 157, 180);
+}
+.nav-list-item:hover a {
+  color: rgb(255, 250, 254);
+}
+.dropdown-list-item a:hover,
+.dropdown-list-item:hover {
+  color: rgb(255, 250, 254);
+}
+.nav-list-item a,
+.dropdown-list-item a {
+  padding: 5%;
+  font-size: 18pt;
+  font-weight: 900;
+}
+.dropdown-list-item {
+  padding: 5%;
+  width: 90%;
+  border-top: 1px dashed rgb(255, 250, 254);
+}
+.nav-meetmia-wrapper {
+  width: 15%;
+  padding-top: 0.34375rem;
+  padding-left: 0.34375rem;
+  z-index: 2;
+}
+.nav-toggler-wrapper {
+  position: fixed;
+  top: calc(1rem + 0.34375rem);
+  right: calc(1rem + 0.34375rem);
+  z-index: 2;
+}
+.nav-shoppingcart-wrapper {
+  position: fixed;
+  top: calc(1rem + 0.34375rem);
+  right: calc(4rem + 0.34375rem);
+  z-index: 2;
+}
+.fab {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  transition: ease-in-out 0.7s;
+  color: rgb(255, 250, 254);
+}
+.fab.fa-facebook:hover {
+  color: white;
+  background-color: #3b5998;
+}
+.fab.fa-instagram:hover {
+  color: white;
+  background-color: #cd486b;
+}
+footer {
+  display: flex;
+  background-color: rgb(107, 157, 180);
+  width: 100%;
+}
+footer a {
+  color: rgb(255, 250, 254);
+}
+footer li,
+footer h4 {
+  color: rgb(255, 250, 254);
+}
+.footer-proizvodi,
+.footer-uvjetikoristenja,
+.footer-meetmia {
+  margin-left: 0;
+}
+.footer-meetmia,
+.footer-proizvodi,
+.footer-uvjetikoristenja,
+#footer-meetmia-wrapper h4,
+#footer-uvjetikoristenja-wrapper h4,
+.footer-proizvodi-wrapper h4,
+.footer-kontakt-wrapper h4 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.dropdown-list-item a:hover,
+.dropdown-list-item:hover {
+  color: rgb(255, 250, 254);
+  background-color: rgb(111, 177, 207);
+}
+.footer-submenu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 0;
+  text-align: center;
+}
+.footer-kontakt {
+  text-align: center;
+}
+.footer-holder {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer li {
+  padding: 5px;
+  font-weight: 700;
+}
+
+.nav-list-dropdown {
+  display: none;
+  background-color: transparent;
+}
+
+.main {
+  position: relative;
+  text-align: center;
+}
+#main-prvi {
+  background-color: #ffe4e3;
+  position: relative;
+}
+#main-prvi h1 {
+  color: #c9883d;
+  text-decoration: underline dotted #c9883d 2px;
+  font-style: italic;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+#main-prvi h4 {
+  color: #c9883d;
+  font-style: italic;
+  position: absolute;
+  top: 30px;
+  right: 100px;
+}
+img {
+  width: 100%;
+}
+.mySlides img {
+  max-width: 880px;
+  margin: auto;
+}
+.fas.fa-chevron-left,
+.fas.fa-chevron-right {
+  display: block;
+  background-color: #ffefdccc;
+  color: #c9883d8a;
+  border-radius: 25%;
+}
+#main-meetcakesbrunch {
+  position: relative;
+  text-align: center;
+}
+.main-meetcakesbrunch-meetbrunch h1 {
+  position: absolute;
+  margin: 0px;
+  right: 5px;
+  color: rgb(255, 250, 254);
+}
+.main-meetcakesbrunch-meetcakes {
+  background-color: #ffcd92;
+  position: relative;
+  text-align: center;
+  display: grid;
+}
+#meet_cakes,
+#meet_brunch {
+  filter: blur(2px);
+}
+.shopnowcakes,
+.shopnowbrunch {
+  position: absolute;
+  bottom: 10%;
+  z-index: 2;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 900 !important;
+  font-style: normal;
+  border-radius: 25%;
+  background-color: #df928e;
+  border: 4px dashed #993a35;
+  color: #993a35;
+  cursor: pointer;
+}
+.shopnowbrunch {
+  background-color: #ffcd92;
+  border-color: #c9883d;
+  color: #c9883d;
+}
+.main-meetcakesbrunch-meetcakes h1 {
+  margin: 0px;
+  position: absolute;
+  color: #457c96;
+}
+.main-meetcakesbrunch-meetbrunch {
+  background-color: #df928e;
+  display: grid;
+  position: relative;
+  text-align: center;
+}
+.main-zadnji-krafne,
+.main-zadnji-sezonskaponuda {
+  position: relative;
+  text-align: center;
+  max-width: 880px;
+  margin: 0px auto;
+}
+.main-zadnji-sezonskaponuda:hover #snijeg {
+  display: block;
+}
+#snijeg {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+.main-zadnji-krafne:hover #doughnut {
+  display: block;
+}
+.main-zadnji-krafne:hover #krafnetxt {
+  display: none;
+}
+#doughnut {
+  position: absolute;
+  top: 0px;
+  left: 28%;
+  width: 45%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+#sezonskaponudatxt,
+#krafnetxt {
+  margin: 0px;
+  position: absolute;
+  width: 80%;
+  top: 39%;
+  left: 9%;
+  font-size: 30pt;
+}
+#krafnetxt {
+  top: 44%;
+  left: 30%;
+  width: 40%;
+}
+.popularno button,
+.mainproizvodi button,
+.kupiproizvod button {
+  padding: 15px 5px 15px 5px;
+  padding-top: 15px;
+  background-color: #c9883d;
+  border-radius: 8%;
+  color: rgb(255, 250, 254);
+  font-weight: 700;
+  font-size: 15px;
+  float: right;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.popularno-item {
+  width: 98%;
+  margin: 1%;
+  background-color: #ffefdc;
+  display: table;
+  padding-bottom: 15px;
+  border-radius: 1%;
+}
+.popularno-item img{
+  width: 98%;
+  margin: 1%;
+  background-color:rgb(255, 250, 254);
+  display: table;
+  padding: 5px;
+  border-radius: 1%;
+}
+.popularno-item h2 {
+  margin-left: 1%;
+  font-style: italic;
+  color: #2b647f;
+}
+.popularno-item h3 {
+  margin-left: 3%;
+  color: #993a35;
+}
+.popularno {
+  margin: 50px 0px;
+}
+.popularno h1 {
+  margin: 2%;
+  color: #2b647f;
+}
+
+.mySlides {
+  display: none;
+  overflow: hidden;
+  text-align: center;
+}
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer;
+  color: white;
+}
+.w3-badge {
+  display: block;
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  border-radius: 50%;
+}
+.demo {
+  border: 1px solid #edaf67 !important;
+}
+.w3-section,
+.w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+.w3-center {
+  text-align: center !important;
+  display: inline-block;
+  position: relative;
+  max-width: 1100px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+.w3-large {
+  font-size: 18px !important;
+}
+
+.w3-hover-text-khaki {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  padding: 5px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.w3-container:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.w3-right {
+  position: absolute;
+  right: 0px;
+}
+.w3-transparent,
+.w3-hover-none:hover {
+  background-color: transparent !important;
+}
+.w3-white,
+.w3-hover-white:hover {
+  color: #000 !important;
+  background-color: #ffefdc !important;
+}
+.w3-badge,
+.w3-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+form .error {
+  color: #ff0000;
+}
+.googlemaps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0px;
+}
+.googlemapsiframe {
+  width: 98%;
+}
+.googlemapsadresa {
+  padding: 10px;
+  margin: 20px;
+  color: #df928e;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px dashed #c9883d;
+  overflow: hidden;
+  width: 100%;
+}
+.googlemaps iframe {
+  width: 100%;
+}
+form button {
+  padding: 20px;
+  background-color: #6b9db4;
+  border-radius: 25%;
+  color: rgb(255, 250, 254);
+  font-weight: 700;
+  font-size: 15px;
+  border: 2px dashed #457c96;
+  letter-spacing: 1px;
+  width: fit-content;
+  float: right;
+  margin-top: 10px;
+}
+#ime,
+#prezime,
+#tel,
+#email,
+#naslov,
+#poruka {
+  background-color: #9cc2d5;
+  min-height: 44px;
+  border-radius: 10%;
+  margin: 10px;
+  color: rgb(255, 250, 254);
+}
+form {
+  background-color: #ffdeb7;
+  padding: 10px;
+  border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #2b647f;
+  margin: 0px auto;
+}
+.posaljibuttondiv {
+  width: 100%;
+}
+.porukawrapper {
+  padding: 10px;
+  margin: 0px auto;
+
+  background-color: #ffdeb7;
+}
+.prvidioupita,
+.drugidioupita {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+label {
+  padding-left: 10px;
+  font-size: 18px;
+}
+.drugidioupita {
+  flex-direction: column;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+.prvidioupitaelement,
+.drugidioupitaelement {
+  display: flex;
+  min-width: 50%;
+  max-width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.drugidioupitaelement {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+#poruka {
+  min-width: 100%;
+  width: 100%;
+  min-height: 200px;
+  padding: 10px;
+  color: rgb(255, 250, 254);
+  border-radius: 2%;
+}
+#poruka::placeholder {
+  color: rgb(255, 250, 254);
+}
+
+#poruka:-ms-input-placeholder {
+  color: rgb(255, 250, 254) !important;
+}
+
+#poruka::-ms-input-placeholder {
+  color: rgb(255, 250, 254) !important;
+}
+.slicicesocial {
+  width: 40%;
+}
+.slicicesocial img {
+  width: unset;
+  max-width: 100%;
+}
+#slicicafb {
+  float: left;
+}
+#slicicaig {
+  clear: both;
+  float: right;
+}
+.kontaktsocialmedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #df928e;
+  text-shadow: 1px 1px #df928e;
+  padding-bottom: 50px;
+}
+.comemeetmia {
+  color: #df928e;
+  text-shadow: 1px 1px #df928e;
+  padding: 50px 0px 0px 0px;
+  text-align: left;
+  text-indent: 2em;
+}
+.otklonimo {
+  color: #c9883d;
+  width: 100%;
+  text-align: left;
+}
+.otklonimo1 {
+  text-indent: 1em;
+  text-align: left;
+}
+.otklonimo2 {
+  text-indent: 3em;
+  text-align: left;
+}
+.otklonimo3 {
+  text-indent: 5em;
+}
+.otklonimo3 span {
+  margin-left: 9em;
+}
+.comemeetmia span {
+  margin-left: 1em;
+  display: block;
+}
+.zapratinas {
+  padding: 20px 10px 20px 20px;
+  width: 100%;
+}
+.citatskim {
+  font-style: oblique;
+}
+.mainproizvodi {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+.mainproizvodi h1 {
+  color: #993A35;
+  text-shadow: 2px 2px #993A35;
+  font-weight: 900 !important;
+  text-decoration: underline dashed #993A35 3px;
+  letter-spacing: 4px;
+  font-size: 50px;
+  background-color: #FFE4E3;
+  width:fit-content;
+  margin:auto;
+  margin-top: unset;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 20px 5px #C9883D inset;
+  border-radius: 5%;
+}
+.mainproizvodi h2 {
+  color:#C9883D;
+  text-shadow: 1px 1px #C9883D;
+  letter-spacing: 5px;
+  font-style: oblique;
+  border: 1px dotted#C9883D;
+  border-radius: 1%;
+  margin: 20px;
+  font-size: 30px;
+}
+.mainproizvodi h3 {
+  text-indent: 1em;
+  color:#C9883D;
+  text-shadow: 1px 1px #C9883D;
+  letter-spacing: 1px;
+}
+.mainproizvodi h4{
+  text-indent: 2em;
+  margin-top: 5px;
+
+  color: #993a35;
+}
+.mainbrunchsendvici, .mainbrunchcroissants {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0px;
+}
+.mainbrunchsendvici div, .mainbrunchcroissants div {
+  width: 100%;
+  display: block;
+  padding: 5px 5px 5px 5px!important;
+  padding-bottom: 15px;
+  text-align: left;
+  margin:  0px 0px 15px 0px;
+  background-color: #ffefdc;
+  border-radius: 1%;
+}
+.mainproizvodi button {
+  width: fit-content;
+  display: block;
+  margin-bottom: 10px;
+}
+.brunchwrapper{
+  background-color: #FFE4E3;
+  box-shadow: 0px 0px 30px 12px white inset;
+}
+.brunchslika {
+  padding: 15px 15px 15px 15px !important;
+  background-color: rgb(255, 250, 254) !important;
+  display: block !important;
+  width: 100% !important;
+  border-radius: 1%;
+}
+.kupiproizvod button{
+  border: 3px dashed #C9883D;
+}
+.slikaproizvoda {
+  text-indent: 0px !important;
+  padding: 20px;
+  background-color: #FFE4E3;
+  width: 100%;
+}
+.slikaproizvoda img{
+  width: 100%;
+  text-indent: 0px !important;
+  padding: 20px;
+  background-color: rgb(255, 250, 254);
+}
+.kupiproizvodwrapper {
+  padding: 50px;
+}
+.proizvodwrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFE4E3;
+  text-indent: 1em;
+  color:#C9883D;
+  text-shadow: 1px 1px #C9883D;
+  letter-spacing: 1px;
+  border: 1px dotted#BA5F5A;
+  margin: 15px;
+}
+.stranicaproizvoda {
+  background-color:rgb(255, 250, 254);
+}
+.proizvodwrapper h1 {
+  text-decoration-line: underline;
+}
+.proizvodwrapper h2 {
+  margin-top: 10px;
+  color: #993a35;
+}
+.proizvodwrapper h3 {
+  color: #BA5F5A;
+  font-style: oblique;
+  text-align: center;
+  text-shadow: none;
+  letter-spacing: 0px;
+  border: 2px dotted rgb(255, 250, 254);
+  width: 95%;
+  padding: 8px;
+  margin: auto;
+  margin-top: 20px;
+}
+.kupiproizvod {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-evenly;
+  background-color: unset;
+}
+.kupiproizvod input {
+  font-size: 28px;
+  text-align: center;
+  background-color: rgb(255, 250, 254);
+}
+.kupiproizvod label {
+  color:#C9883D;
+  font-size: 28px;
+}
+.kupiproizvod::placeholder {
+  color: #C9883D;
+}
+
+.kupiproizvod:-ms-input-placeholder {
+  color: #C9883D !important;
+}
+
+.kupiproizvod::-ms-input-placeholder {
+  color: #C9883D !important;
+}
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  text-align: left;
+  margin-top: calc(1rem + 0.34375rem);
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+  letter-spacing: 1px !important;
+  color: #C9883D !important;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #993a35;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  text-decoration: none;
+  color:#C9883D !important;
+  text-shadow: none;
+}
+
+ul.breadcrumb li a:hover {
+  color:#993a35 !important;
+  text-decoration: underline;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.mySlides h4 {
+  z-index: 1;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media (min-width: 992px) {
+  nav.nav {
+    transform: translate3d(0, 0, 0);
+  }
+  .nav-toggler-wrapper {
+    display: none;
+  }
+  .nav-meetmia-wrapper {
+    display: none;
+  }
+  .nav-shoppingcart-wrapper {
+    right: 0.34375rem;
+  }
+  .footer-holder {
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  .footer-meetmia,
+  .footer-proizvodi,
+  #footer-meetmia-wrapper h4,
+  #footer-uvjetikoristenja-wrapper h4,
+  .footer-uvjetikoristenja,
+  .footer-proizvodi-wrapper h4,
+  .footer-kontakt-wrapper h4 {
+    margin-left: 0px;
+    text-align: left;
+  }
+  .footer-meetmia,
+  .footer-uvjetikoristenja,
+  .footer-proizvodi,
+  .footer-kontakt {
+    text-align: left;
+    margin-left: 0;
+    padding-top: 0px;
+  }
+  .footer-submenu {
+    padding-top: 15px;
+    margin-left: 48%;
+    text-align: left;
+  }
+  .footer-submenu {
+    padding-top: 15px;
+    margin-left: 15px;
+    text-align: left;
+  }
+  .flippin {
+    display: flex;
+    flex-direction: column;
+  }
+  .main,
+  .popularno {
+    margin-left: 194px;
+  }
+  .popularno-item {
+    width: 31.3%;
+  }
+  .popularno-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #meet_cakes,
+  #meet_brunch {
+    filter: unset;
+  }
+  .main-meetcakesbrunch-meetcakes:hover #meet_cakes,
+  .main-meetcakesbrunch-meetbrunch:hover #meet_brunch {
+    filter: blur(4px);
+  }
+  .main-meetcakesbrunch-meetcakes:hover .shopnowcakes,
+  .main-meetcakesbrunch-meetbrunch:hover .shopnowbrunch {
+    display: unset;
+  }
+  .shopnowcakes,
+  .shopnowbrunch {
+    display: none;
+  }
+  .googlemaps {
+    flex-direction: row;
+    width: 100%;
+  }
+  .googlemapsiframe {
+    width: 60%;
+  }
+  .googlemapsadresa {
+    width: 40%;
+    flex-wrap: wrap;
+  }
+  .prvidioupita {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 260px;
+    float: left;
+    min-width: unset;
+    max-width: unset;
+  }
+  .drugidioupita {
+    float: left;
+    width: unset;
+    min-width: 481px;
+    max-width: unset;
+  }
+  .drugidioupitaelement {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+  form button {
+    clear: both;
+    float: right;
+  }
+  #poruka {
+    width: 100%;
+    min-width: unset;
+    max-width: unset;
+    border-radius: 5%;
+  }
+  form {
+    display: table;
+    width: fit-content;
+  }
+  .otklonimo {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .shopnowcakes,
+  .shopnowbrunch {
+    padding: 50px;
+    font-size: 18pt;
+  }
+  .kontaktsocialmedia {
+    flex-direction: row;
+  }
+  .slicicesocial {
+    width: 20%;
+  }
+  .zapratinas {
+    text-align: left;
+  }
+  .mainproizvodi h1 {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .mainproizvodi h2 {
+    color:#C9883D;
+    text-shadow: 1px 1px #C9883D;
+    letter-spacing: 5px;
+    font-style: oblique;
+    border: 1px dotted#C9883D;
+    margin: 20px;
+    font-size: 30px;
+  }
+  .mainproizvodi h3 {
+    text-indent: 1em;
+    color:#C9883D;
+    text-shadow: 1px 1px #C9883D;
+    letter-spacing: 1px;
+  }
+  .mainproizvodi h4{
+    text-indent: 2em;
+    margin-top: 5px;
+  
+    color: #993a35;
+  }
+  .mainbrunchsendvici, .mainbrunchcroissants {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    padding: 15px;
+  }
+  .mainbrunchsendvici>div, .mainbrunchcroissants>div {
+    width: 31.3%;
+    display: block;
+    padding: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+    margin: 1%;
+    background-color: #ffefdc;
+  }
+  .brunchwrapper{
+    background-color: #FFE4E3;
+    box-shadow: 2px 2px 90px 60px white inset;
+  }
+  .proizvodwrapper h1 {
+    text-decoration-line: underline;
+    text-align: left;
+    text-indent: 3rem;
+  }
+  .proizvodwrapper h2 {
+    margin-top: 10px;
+    color: #993a35;
+    text-align: left;
+    text-indent: 3rem;
+  }
+  .proizvodwrapper h3 {
+    color: #BA5F5A;
+    font-style: oblique;
+    text-align: justify;
+    text-indent: 0px;
+    text-shadow: none;
+    letter-spacing: 0px;
+    border: 2px dotted rgb(255, 250, 254);
+    width: 93%;
+    padding: 8px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 3rem;
+  }
+  .kupiproizvod {
+    flex-direction: row;
+    float: right;
+  }
+  .kupiproizvod div {
+    width: 100%;
+  }
+  .kupiproizvod{
+    text-align: right;
+  }
+}
+/* bijela: 255,250,254 */

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MarijaLuksic</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/375dbe4a26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="jquery-1.11.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-holder">
+        <div class="nav-logo-wrapper">
+          <a class="nav-logo" href="index.html">
+            <img src="logo.jpg" alt="Site Logo"
+          /></a>
+        </div>
+
+        <div class="nav-list-wrapper">
+          <ul class="nav-list">
+            <li class="nav-list-item" id="cakes-dropdown">
+              <a href="#">CAKES</a
+              ><span>
+                <ul class="nav-list-dropdown" id="cakes-list-dropdown">
+                  <li class="dropdown-list-item"><a href="#">Torte</a></li>
+                  <li class="dropdown-list-item"><a href="#">Kolači</a></li>
+                  <li class="dropdown-list-item">
+                    <a href="#">Kolači na kg</a>
+                  </li>
+                </ul></span
+              >
+            </li>
+            <li class="nav-list-item" id="brunch-dropdown">
+              <a href="proizvodi.html">BRUNCH</a
+              ><span>
+                <ul class="nav-list-dropdown" id="brunch-list-dropdown">
+                  <li class="dropdown-list-item"><a href="proizvodi.html#sendvici">Sendviči</a></li>
+                  <li class="dropdown-list-item">
+                    <a href="proizvodi.html#croissants">Croissants slatki</a>
+                  </li>
+                </ul></span
+              >
+            </li>
+            <li class="nav-list-item"><a href="#">KRAFNE</a></li>
+            <li class="nav-list-item"><a href="#">SEZONSKA PONUDA</a></li>
+            <li class="nav-list-item" id="about-dropdown">
+              <a href="#">O NAMA</a
+              ><span>
+                <ul class="nav-list-dropdown" id="about-list-dropdown">
+                  <li class="dropdown-list-item"><a href="#">Kontakt</a></li>
+                  <li class="dropdown-list-item"><a href="#">O nama</a></li>
+                  <li class="dropdown-list-item"><a href="#">Press</a></li>
+                </ul></span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-meetmia-wrapper">
+      <button class="nav-meetmia">
+        <a href="index.html"><img src="logo.jpg" alt="MeetMia logo" /></a>
+      </button>
+    </div>
+    <div class="nav-shoppingcart-wrapper">
+      <button class="nav-shoppingcart">
+        <a href="#"><i class="fas fa-shopping-basket fa-2x"></i></a>
+      </button>
+    </div>
+    <div class="nav-toggler-wrapper">
+      <button class="nav-toggler" aria-label="Open/Close Navigation">
+        <i class="fas fa-bars fa-2x"></i></button
+      ><span><span></span><span></span><span></span></span>
+    </div>
+    <div class="main">
+      <div class="porukawrapper">
+        <div class="otklonimo">
+          <h3 class="otklonimo1">Tko pita ne skita...</h3>
+          <br />
+          <h3 class="otklonimo2">Tražite posao?</h3>
+          <br />
+          <h3 class="otklonimo3">
+            Prijedlozi, upiti, nedoumice...<br /><span
+              >Otklonimo ih zajedno!</span
+            >
+          </h3>
+          <br />
+        </div>
+        <form
+          action="javascript:alert( 'Vaš upit je uspješno poslan!' );"
+          name="upit"
+        >
+          <div class="prvidioupita">
+            <div class="prvidioupitaelement">
+              <label for="ime">Ime:</label>
+              <input type="text" name="ime" id="ime" autofocus />
+            </div>
+            <span id="porukaFirstname"></span>
+            <div class="prvidioupitaelement">
+              <label for="prezime">Prezime:</label>
+              <input type="text" name="prezime" id="prezime" />
+            </div>
+            <span id="porukaLastname"></span>
+            <div class="prvidioupitaelement">
+              <label>E-mail:</label
+              ><input name="email" type="email" id="email" />
+            </div>
+            <span id="porukaEmail"></span>
+            <div class="prvidioupitaelement">
+              <label>Telefon:</label><input name="tel" type="tel" id="tel" />
+            </div>
+          </div>
+          <div class="drugidioupita">
+            <div class="drugidioupitaelement">
+              <label>Naslov:</label
+              ><input type="text" name="naslov" id="naslov" />
+            </div>
+            <div class="drugidioupitaelement">
+              <textarea
+                name="poruka"
+                id="poruka"
+                placeholder="Unesite tijelo poruke ovdje..."
+              ></textarea>
+            </div>
+            <span id="porukaPoruka"></span>
+            <div class="posaljibuttondiv">
+              <button type="submit" id="gumb">POŠALJI</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <div class="comemeetmia">
+          <h2>
+            Come Meet Mia...<br /><span>and her beautiful cakes too!</span>
+          </h2>
+        </div>
+
+        <div class="googlemaps">
+          <div class="googlemapsiframe">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.864352381178!2d15.980420415569219!3d45.813974979106725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d7002bf11a89%3A0xed0555333c85e661!2sVla%C5%A1ka%20ul.%2043%2C%2010000%2C%20Zagreb!5e0!3m2!1sen!2shr!4v1642797155985!5m2!1sen!2shr"
+              width="800"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="googlemapsadresa">
+            <h2>
+              Radno vrijeme:<br />PON-SUB 09:00-22:00h,<br />NED 10:00-20:00h
+            </h2>
+            <h2>Adresa: Vlaška ul. 43, 10000, Zagreb</h2>
+            <h2>Telefon: +385 91 445 5122</h2>
+            <h2>E-mail: meetmia.cakes@gmail.com</h2>
+          </div>
+        </div>
+      </div>
+      <div class="kontaktsocialmedia">
+        <div class="slicicesocial">
+          <div>
+            <a href="https://www.facebook.com/meetmia/"
+              ><img
+                src="images/facebook.png"
+                id="slicicafb"
+                alt="Meet Mia Facebook stranica"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/meetmiacakes/"
+              ><img
+                src="images/instagram.png"
+                id="slicicaig"
+                alt="Meet Mia Instagram stranica"
+            /></a>
+          </div>
+        </div>
+        <div class="zapratinas">
+          <h2 class="citatskim">“S kim si takav si.”</h2>
+          <h2>
+            Zaprati nas na društvenim mrežama i unesi dašak čarolije u svoj
+            feed!
+          </h2>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-holder">
+        <div class="footer-proizvodi-wrapper">
+          <h4>PROIZVODI</h4>
+          <ul class="footer-proizvodi">
+            <li>
+              <a href="">Cakes</a>
+              <ul class="footer-submenu">
+                <li><a href="">Torte</a></li>
+                <li><a href="">Kolači</a></li>
+                <li><a href="">Kolači na kg</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="proizvodi.html">Brunch</a>
+              <ul class="footer-submenu">
+                <li><a href="proizvodi.html#sendvici">Sendviči</a></li>
+                <li><a href="proizvodi.html#croissants">Croissants slatki</a></li>
+              </ul>
+            </li>
+            <li><a href="">Krafne</a></li>
+            <li><a href="">Sezonska ponuda</a></li>
+          </ul>
+        </div>
+        <div>
+          <div id="footer-meetmia-wrapper">
+            <h4>MEET MIA</h4>
+            <ul class="footer-meetmia">
+              <li><a href="">O nama</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+          <div id="footer-uvjetikoristenja-wrapper">
+            <h4>UVJETI KORIŠTENJA</h4>
+            <ul class="footer-uvjetikoristenja">
+              <li><a href="">Košarica</a></li>
+              <li><a href="">Moj račun</a></li>
+              <li><a href="">Uvjeti dostave</a></li>
+              <li><a href="">Politika privatnosti</a></li>
+              <li><a href="">Uvjeti korištenja</a></li>
+              <li><a href="">Načini plaćanja</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-kontakt-wrapper">
+          <h4>KONTAKT</h4>
+          <ul class="footer-kontakt">
+            <li>Adresa: Vlaška ul. 43, 10000, Zagreb</li>
+            <li>Telefon: +385 91 445 5122</li>
+            <li>E-mail: meetmia.cakes@gmail.com</li>
+            <br />
+            <li>
+              Radno vrijeme: <br /><br />
+              PON-SUB 09:00-22:00h,<br /><br />
+              NED 10:00-20:00h
+            </li>
+            <li>
+              <span
+                ><a href="https://www.facebook.com/meetmia/"
+                  ><i class="fab fa-facebook fa-2x"></i></a></span
+              ><span
+                ><a href="https://www.instagram.com/meetmiacakes/"
+                  ><i class="fab fa-instagram fa-2x"></i></a
+              ></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var nav = document.querySelector("nav.nav"),
+        navToggler = document.querySelector("button.nav-toggler");
+
+      navToggler.addEventListener("click", function () {
+        this.classList.toggle("open");
+        nav.classList.toggle("open");
+      });
+      document.getElementById("gumb").onclick = function (event) {
+        var slanje_forme = true;
+
+        var poljeUsername = document.getElementById("ime");
+        var username = document.getElementById("ime").value;
+        var porukaUsename = document.getElementById("porukaFirstname");
+
+        if (username.length < 1) {
+          slanje_forme = false;
+          poljeUsername.style.border = "2px dashed red";
+          porukaUsename.style.color = "red";
+
+          document.getElementById("porukaFirstname").innerHTML =
+            "Molimo unesite Vaše ime<br>";
+        } else {
+          poljeUsername.style.border = "rgb(118, 118, 118)";
+
+          document.getElementById("porukaFirstname").innerHTML = "";
+        }
+        var poljeLastname = document.getElementById("prezime");
+        var lastname = document.getElementById("prezime").value;
+        var porukaLastname = document.getElementById("porukaLastname");
+
+        if (lastname.length < 1) {
+          slanje_forme = false;
+          poljeLastname.style.border = "2px dashed red";
+          porukaLastname.style.color = "red";
+
+          document.getElementById("porukaLastname").innerHTML =
+            "Molimo unesite Vaše prezime<br>";
+        } else {
+          poljeLastname.style.border = "rgb(118, 118, 118)";
+
+          document.getElementById("porukaLastname").innerHTML = "";
+        }
+
+        var poljeEmail = document.getElementById("email");
+        var email = document.getElementById("email").value;
+        var porukaEmail = document.getElementById("porukaEmail");
+
+        if (email.length < 1) {
+          slanje_forme = false;
+          poljeEmail.style.border = "2px dashed red";
+          porukaEmail.style.color = "red";
+
+          document.getElementById("porukaEmail").innerHTML =
+            "Molimo unesite Vašu e-mail adresu<br>";
+        } else {
+          poljeEmail.style.border = "rgb(118, 118, 118)";
+
+          document.getElementById("porukaEmail").innerHTML = "";
+        }
+        var poljeTekst = document.getElementById("poruka");
+        var tekst = document.getElementById("poruka").value;
+        var porukaTekst = document.getElementById("porukaPoruka");
+
+        if (tekst.length < 1) {
+          slanje_forme = false;
+          poljeTekst.style.border = "2px dashed red";
+          porukaPoruka.style.color = "red";
+
+          document.getElementById("porukaPoruka").innerHTML =
+            "Molimo unesite tijelo poruke<br>";
+        } else {
+          poljeTekst.style.border = "rgb(118, 118, 118)";
+
+          document.getElementById("porukaPoruka").innerHTML = "";
+        }
+
+        if (slanje_forme != true) {
+          event.preventDefault();
+        }
+      };
+    </script>
+  </body>
+</html>
